@@ -1,3 +1,6 @@
 import os
+
+
+
 TOKEN = os.environ['TOKEN']
-print(TOKEN)
+# print(os.environ)

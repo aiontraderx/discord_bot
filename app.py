@@ -3,10 +3,11 @@ from discord.ext import commands,tasks
 import random
 from itertools import cycle
 from twitter import TwitterBot
-import os
 import config_file
+import os
 PREFIX = '!!' #คำนำหน้า
 
+# print(config_file.TOKEN)
 
 bot = commands.Bot(command_prefix=PREFIX)
 
