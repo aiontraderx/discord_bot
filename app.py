@@ -4,7 +4,7 @@ import random
 from itertools import cycle
 from twitter import TwitterBot
 import os
-
+import config_file
 PREFIX = '!!' #คำนำหน้า
 
 
@@ -103,7 +103,8 @@ async def on_ready():
     print(f'{bot.user} has connected to Discord!')
 
 
-TOKEN = os.environ['TOKEN']
+TOKEN = config_file.TOKEN
+
 
 bot.run(TOKEN)
 
